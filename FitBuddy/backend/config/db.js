@@ -5,6 +5,7 @@ const connectDB = async () => {
       useUnifiedTopology: true,
       useCreateIndex: true,
       useFindAndModify: false,
+      serverSelectionTimeoutMS: 5000,
     });
     console.log("MongoDB connected");
   } catch (error) {
